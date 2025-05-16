@@ -29,10 +29,10 @@ O projeto não só gera relatórios individuais, como também prepara os dados p
 
 O arquivo `.csv` precisa ter essas quatro colunas:
 
-| Nome          | Setor         | Horas Extras | Data    |
-|---------------|---------------|---------------|---------|
-| João da Silva | Financeiro    | 12            | 03/2025 |
-| Ana Souza     | RH            | 8             | 03/2025 |
+| Nome          | Setor      | Horas Extras | Data    |
+| ------------- | ---------- | ------------ | ------- |
+| João da Silva | Financeiro | 12           | 03/2025 |
+| Ana Souza     | RH         | 8            | 03/2025 |
 
 📌 **Importante:** A coluna `Data` deve seguir o formato `MM/AAAA` (sem dia).
 
@@ -43,5 +43,6 @@ O arquivo `.csv` precisa ter essas quatro colunas:
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/nome-do-repo.git
-cd nome-do-repo
+git clone https://github.com/kallanifernandes/GeradorPDF.git
+cd GeradorPDF
+```
