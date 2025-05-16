@@ -1,44 +1,47 @@
 # 🕒 Relatório de Horas Extras por Funcionário
 
-Projeto em Python que automatiza a geração de **relatórios individuais em PDF** com base em um arquivo `.CSV` contendo informações de funcionários, seus setores, quantidade de horas extras e o período (mês/ano). Ideal para análises estratégicas e tomadas de decisão por parte da alta gestão.
+Esse projeto foi feito com o objetivo de automatizar a geração de **relatórios individuais em PDF** a partir de um arquivo `.CSV`, contendo dados como nome do colaborador, setor, quantidade de horas extras e o mês/ano. A ideia é transformar um processo manual em algo prático, rápido e com potencial de uso real dentro das empresas.
 
 ---
 
-## 📌 Objetivo
+## 📌 Qual a proposta?
 
-O objetivo é facilitar o controle de horas extras por funcionário e setor, permitindo uma visão clara sobre a **distribuição da carga de trabalho** na empresa. Com isso, a gestão pode:
+Ter controle sobre as horas extras por setor e por funcionário é algo essencial para qualquer empresa que deseja crescer com organização. Com esse projeto, é possível:
 
-- Identificar sobrecarga em setores específicos
-- Avaliar a necessidade de contratação ou redistribuição de tarefas
-- Tomar decisões baseadas em dados reais
+- Ver quais setores estão sobrecarregados
+- Analisar se há necessidade de contratar ou redistribuir tarefas
+- Tomar decisões baseadas em dados e não apenas em achismos
+
+O projeto não só gera relatórios individuais, como também prepara os dados para uma análise geral, permitindo identificar padrões com muito mais clareza.
 
 ---
 
-## 🛠️ Tecnologias utilizadas
+## ⚙️ Tecnologias utilizadas
 
 - **Python 3.10+**
-- [`pandas`](https://pandas.pydata.org/) — para leitura e manipulação do CSV
-- [`reportlab`](https://www.reportlab.com/) — para criação dos arquivos PDF
-- [`faker`](https://faker.readthedocs.io/) — para gerar dados fictícios nos testes
+- [`pandas`](https://pandas.pydata.org/): para ler e tratar os dados do CSV
+- [`reportlab`](https://www.reportlab.com/): para gerar os arquivos PDF automaticamente
+- [`faker`](https://faker.readthedocs.io/): usei essa biblioteca para gerar dados fictícios e testar o projeto
 
 ---
 
-## 📂 Estrutura dos dados
+## 🗂️ Estrutura esperada do CSV
 
-O arquivo CSV deve conter as seguintes colunas:
+O arquivo `.csv` precisa ter essas quatro colunas:
 
 | Nome          | Setor         | Horas Extras | Data    |
 |---------------|---------------|---------------|---------|
 | João da Silva | Financeiro    | 12            | 03/2025 |
 | Ana Souza     | RH            | 8             | 03/2025 |
 
-> A coluna **Data** deve estar no formato `MM/AAAA`.
+📌 **Importante:** A coluna `Data` deve seguir o formato `MM/AAAA` (sem dia).
 
 ---
 
-## 🚀 Como executar o projeto
+## 🚀 Como rodar o projeto
 
-1. Clone este repositório:
+1. Clone o repositório:
+
 ```bash
 git clone https://github.com/seu-usuario/nome-do-repo.git
 cd nome-do-repo
